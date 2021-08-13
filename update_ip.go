@@ -63,9 +63,6 @@ func update(token string, params *url.Values) bool {
 
 func updateDomainAddress(info *domainInfo, extIPAddr *externalIPAddress, conf *config) {
 	subdomain := conf.SubDomain
-	if len(conf.SubDomain) == 0 {
-		subdomain = "@"
-	}
 
 	var (
 		ttl  string
